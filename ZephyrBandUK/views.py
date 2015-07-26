@@ -3,7 +3,7 @@ from django.http import HttpResponse
 import bs4
 import requests
 	
-def onthecase(request):
+def zephyr(request):
 	response = requests.get("http://www.onthecasemusic.co.uk/bands/717/zephyr")
 	soup = bs4.BeautifulSoup(response.text, "html.parser")
 	dates = [x.text for x in soup.select('h2[style=font-size:19px;]')]

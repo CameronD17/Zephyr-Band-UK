@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from ZephyrBandUK.views import onthecase
+from ZephyrBandUK.views import zephyr
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-	url(r'^onthecase/', onthecase),
+	url(r'^zephyr/', zephyr),
 ]
