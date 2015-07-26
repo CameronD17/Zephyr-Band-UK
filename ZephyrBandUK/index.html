@@ -127,23 +127,17 @@
         <div class="upcoming-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Upcoming Dates</h2>
-					
-					{% for dates, venuelinks, venues, times in gig|slice:":2" %}
-					<ul>
-						<li>{{dates}}</li>
-						<li><a href="{{venuelinks}}">{{venues}}</a></li>
-						<li>{{times}}</li>
-					</ul>
-					{% endfor %}
-					
-					
+                    <h2>Upcoming Dates</h2>					
+					{% for dates, venuelinks, venues, times in gig %}
+						<div class="col-lg-8 col-lg-offset-2 upcoming-gig">
+							<p>{{dates}}</br><a href="{{venuelinks}}">{{venues}}</a> | {{times}}</p>
+						</div>
+					{% endfor %}					
 					<p>Further tour dates can be found at <a href="https://www.ents24.com/uk/tour-dates/zephyr-1">Ents24</a> and <a href="http://www.onthecasemusic.co.uk/bands/717/zephyr">OnTheCase</a>.</p>
-					<p><a class="ents24-events-widget" href="https://www.ents24.com/uk/tour-dates/zephyr-1" data-entity-type="artist" data-entity-id="d5k24" data-widget-title="Zephyr Tour Dates" data-track-entity="true" data-track-events="false" data-ticket-links="true" data-entity-image="false" data-event-images="true" data-widget-theme="dark-bg" data-css="true">Zephyr Tour Dates &amp; Tickets</a></p><script type="text/javascript" src="media.ents24network.com/assets/minified/widget/ents24_widget.min.js"></script>
 					<h3>Contact</h3>
 					<p>To contact Zephyr, or to make a booking, please call 07802 570326.</p>
 				</div>
-            </div>
+			</div>
         </div>
     </section>
 

@@ -317,6 +317,18 @@ a:focus {
     -o-background-size: cover;
 }
 
+.upcoming-gig {
+	border: 1px solid #FFF;
+	background-color: rgba(0,0,0,.8);
+	float: none;
+	margin: 10px auto;
+	display: block;
+}
+
+.upcoming-gig p{	
+    margin: 10px 0 12px 0;
+}
+
 footer {	
     color: rgba(255,255,255,.3);
     padding: 50px 0 50px 0;

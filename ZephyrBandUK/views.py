@@ -10,7 +10,7 @@ def onthecase(request):
 	venues = [x.text for x in soup.select('div.name a[href^=/venues]')]
 	venuelinks = ["http://www.onthecasemusic.co.uk" + x.attrs.get('href') for x in soup.select('div.name a[href^=/venues]')]
 	times = [x.text for x in soup.select('div.price')]		
-	gigs = zip(dates, venuelinks, venues, times)
+	gigs = zip(dates[:6], venuelinks[:6], venues[:6], times[:6])
 	t = loader.get_template('index.html')
 	html = t.render({'gig': gigs})	
 	return HttpResponse(html)
