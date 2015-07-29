@@ -13,7 +13,9 @@ Including another URLconf
     1. Add an import:  from blog import urls as blog_urls
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
+from django.conf import settings
 from django.conf.urls import patterns, include, url
+from django.conf.urls.static import static  
 from django.contrib import admin
 from ZephyrBandUK.views import zephyr
 
@@ -21,3 +23,4 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url(r'^zephyr/', zephyr),
 ]
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
