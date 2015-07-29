@@ -1,7 +1,7 @@
 from django.template import loader, Context
 from django.http import HttpResponse
-import bs4
 import requests
+import bs4
 	
 def zephyr(request):
 	response = requests.get("http://www.onthecasemusic.co.uk/bands/717/zephyr")
