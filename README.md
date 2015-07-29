@@ -3,6 +3,7 @@
 zephyrband.uk is a single-page portfolio website for North-East based rock band Zephyr. 
 
 The design is built on the [Start Bootstrap](http://startbootstrap.com/) [Grayscale](http://startbootstrap.com/template-overviews/grayscale/) template, which is itself based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+The data-scraping pulls data from onthecasemusic.co.uk (awaiting permission) and is written in Python. Django is used to display the scraped data on the page.
 
 ## Bugs / Issues
 
