@@ -81,6 +81,7 @@ a:focus {
 
 .navbar-custom .navbar-brand {
 	z-index: 0;
+	font-size:30px;
 }
 
 .navbar-toggle {
@@ -92,26 +93,13 @@ a:focus {
     width: 100%;
     left: 0;
     text-align: center;
+    text-transform: none;
+	font-family: 'XXII', 'Rock Salt', cursive;	
     margin: auto;
 }
 
-.navbar-custom .navbar-brand:focus {
-    outline: 0;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
-    font-size: 20px;
-    color: #fff;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle:focus,
-.navbar-custom .navbar-brand .navbar-toggle:active {
-    outline: 0;
-}
-
 .navbar-right {
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .navbar-custom a {
@@ -136,6 +124,12 @@ a:focus {
     background-color: rgba(255,255,255,.3);
 }
 
+@media(min-width:768px){
+	.navbar-left {
+		margin-top: 0px
+	}
+}
+
 @media(min-width:768px) and (min-height:550px){
 	.img-circle {
 		display: inline;
@@ -151,14 +145,10 @@ a:focus {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 	
-	.navbar-left {
-		margin-top: 0px
-	}
-	
 	.navbar-custom .navbar-brand {
 		font-weight: 700;
 		float: none;
-		font-size: 60px;
+		font-size: 120px;
 		color: #FFFFFF;
 		text-align: center;
 		margin-top: 20%;
@@ -167,18 +157,18 @@ a:focus {
 	
 	.navbar-custom .navbar-brand.top-nav-collapse{		
 		margin: 0;	
-		font-size: 18px;
+		font-size:30px;
 	}
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 2px solid rgba(255,255,255,.6);
         background: #000;
     }
 }
 
 .intro {
-    display: table;
+    display: none;
     width: 100%;
     height: auto;
     padding: 100px 0;
@@ -192,14 +182,9 @@ a:focus {
     -o-background-size: cover;
 }
 
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: bottom;
-	padding-bottom: 5%;
-}
-
 @media(min-width:768px) {
     .intro {
+		display: table;
         height: 100%;
         padding: 0;
     }
@@ -316,4 +301,9 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+@font-face {
+    font-family: XXII;
+    src: url('../fonts/XXII.ttf') format('truetype');
 }

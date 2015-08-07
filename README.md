@@ -22,3 +22,5 @@ Images copyright of their respective owners.
 Copyright 2015 Cameron Doyle. Code released under the [Apache 2.0](https://github.com/CameronD17/camerond17.github.io/blob/master/LICENSE) license.
 
 Grayscale Template - Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
+
+Title font (XXII Arabian Onenightstand) - Copyright 2008 doubletwo studios. All rights reserved.
