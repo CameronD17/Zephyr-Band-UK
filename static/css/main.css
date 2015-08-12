@@ -305,5 +305,12 @@ body {
 
 @font-face {
     font-family: XXII;
-    src: url('../fonts/XXII.ttf') format('truetype');
+    src: url('../fonts/xxii-webfont.eot');
+    src: url('../fonts/xxii-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/xxii-webfont.woff2') format('woff2'),
+         url('../fonts/xxii-webfont.woff') format('woff'),
+         url('../fonts/xxii-webfont.ttf') format('truetype'),
+         url('../fonts/xxii-webfont.svg#xxii_arabian-onenightstandBd') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
