@@ -22,6 +22,6 @@ from ZephyrBandUK.views import zephyr
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^zephyr/', zephyr),
-    url(r'^/', zephyr),
+    url(r'^', zephyr),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
